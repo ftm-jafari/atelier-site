@@ -3,16 +3,16 @@ import './App.css'
 import Footer from './components/footer/Footer'
 import Home from './components/home/Home'
 import Main from './components/main/Main'
-import Navbar from './components/navbar/Navbar'
+import Header from './components/header/Header'
 
 function App() {
 
   return (
     <>
-    <Navbar />
-    <Home />
-    <Main />
-    <Footer />
+    <Header />
+    {/* <Home /> */}
+    {/* <Main /> */}
+    {/* <Footer /> */}
     </>
   )
 }
