@@ -12,73 +12,33 @@
     --cardBG: rgb(255, 255, 235);
 }
 
+.bg-blue{
+    background-color: #B4D6DB;
+}
+
 .nav-item{
     margin: 0 12px;
 }
+
 /*// color: #717070;
     //color: #be8c13;*/
 
 .nav-item:hover{
     border-radius: 15px;
-    background-color: #f6b517;
+    background-color: #e5b63f;
     color: black;
-    transition: .3ms ease;
+    transition: .3ms ease-in-out;
 }
 
-.header{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--whiteColorDeam);
-    width: 100%;
-    padding: 1rem;
-    z-index: 1000;
+.img-icon{
+    width: 28px;
+    height: 28px;
+}
 
-  
 
-    @media screen and (max-width: 768px) {
-        .navBar{
-            position: absolute;
-            background: var(--whiteColorDeam);
-            height: max-content;
-            width: 80%;
-            border-radius: 1rem;
-            top: 6rem;
-            left: 50%;
-            transform: translate(-50%);
-            z-index: 2000;
-            box-shadow: 0 2px 4px rgba(2,15,29,0.904);
-            transform: .3s ease-in-out;
-
-            .navLists{
-                flex-direction: column;
-                justify-content: center;
-                width: 100%;
-                margin: auto;
-                padding: .5rem 0;
-
-                .navItem{
-                    padding: 0.5rem 0;
-
-                    .navLink{
-                        color: var(--textColor);
-                        font-size: 0.9rem;
-                        font-weight: 600;
-                        &:hover{
-                            color: var(--PrimaryColor);
-                        }
-                    }
-                }
-
-                .btn{
-                    margin-top: 1rem;
-                    a{
-                        font-weight: 600;
-                        color: var(--whiteColor);
-                    }
-                }
-            }
-        }
+@media screen and (min-width: 768px) {
+    .navbar-collapse{
+        display: flex;
+        justify-content: space-between;
     }
 }
