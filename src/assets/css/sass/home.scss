@@ -1,0 +1,106 @@
+:root{
+    --PrimaryColor: hsl(199, 100%,33%);
+    --SecoundaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --grayText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(255, 255, 235);
+}
+
+.home{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+
+    .overlay{
+        position: absolute;
+        height: 100%;
+        width:100%;
+        background: rgb(47,106,127);
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        mix-blend-mode: hard-light;
+    }
+    video{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        object-fit: cover;
+    }
+
+}
+
+.category{
+    padding: 5px;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+
+    &:hover{
+        background-color: #ff725cc9;
+        transition: 0.3s;
+    }
+}
+.category a{
+    color: black;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    color: #ff725cc9 !important;
+}
+.swiper-button-prev{
+    right: 0 !important;
+}
+.swiper-button-next{
+    left: 0 !important;
+}
+
+
+.shadow-category{
+    margin-top: 10px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+ }
+
+@media screen and (min-width: 1024px) {
+    .img-carousel{
+        height: 670px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .img-carousel{
+        height: 450px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .img-carousel{
+        height: 350px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .img-carousel{
+        height: 250px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .img-carousel{
+        height: 180px;
+    }
+}
+
+
+

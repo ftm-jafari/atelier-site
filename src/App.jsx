@@ -1,16 +1,16 @@
 import React from 'react'
 import './App.css'
-import Footer from './components/footer/Footer'
-import Home from './components/home/Home'
-import Main from './components/main/Main'
-import Header from './components/header/Header'
+import Footer from './views/app/Footer'
+import Home from './views/app/Home'
+import Main from './views/app/Main'
+import Header from './views/app/Header'
 
 function App() {
 
   return (
     <>
     <Header />
-    {/* <Home /> */}
+    <Home />
     {/* <Main /> */}
     {/* <Footer /> */}
     </>
