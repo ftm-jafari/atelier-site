@@ -10,4 +10,33 @@
   --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
   --cardBG: rgb(255, 255, 235);
+}
+
+.bg-blue {
+  background-color: #B4D6DB;
+}
+
+.nav-item {
+  margin: 0 12px;
+}
+
+/*// color: #717070;
+    //color: #be8c13;*/
+.nav-item:hover {
+  border-radius: 15px;
+  background-color: #ff735c;
+  color: black;
+  transition: 0.3ms ease-in-out;
+}
+
+.img-icon {
+  width: 28px;
+  height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=navbar.css.map */
